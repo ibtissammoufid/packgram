@@ -10,6 +10,14 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { DispatchComponent } from './dispatch/dispatch.component';
+import { SearchComponent } from './search/search.component';
+import { ProfilComponent } from './profil/profil.component';
+import { MyprofilComponent } from './myprofil/myprofil.component';
+import { ReserveComponent } from './reserve/reserve.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,6 +27,14 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'login',          component: LoginComponent },
     { path: 'home',          component: HomeComponent },
+    { path: 'register',          component: RegisterComponent },
+    { path: 'acceuil',          component: AcceuilComponent },
+    { path: 'dispatch',          component: DispatchComponent },
+    { path: 'search',          component: SearchComponent },
+    { path: 'profil',     component: ProfilComponent },
+    { path: 'myprofil',          component: MyprofilComponent },
+    { path: 'reserve',     component: ReserveComponent },
+    { path: 'about',     component: AboutusComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent }
 ];
 

@@ -1,0 +1,92 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                      <div class="card card-register"  style="background-color: aliceblue;">
+                          
+                          <img src="assets/img/logo.png"  style="width:100px;height:80px;margin-left: auto;
+                          margin-right: auto;" alt="Italian Trulli">
+                          <form class="register-form">
+
+                              
+
+                              <label>Email</label>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-email-85"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
+                              </div>
+
+                              <br>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-key-25"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
+                              </div>
+                              <br>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-alert-circle-i"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="CIN" (focus)="focus=true" (blur)="focus=false" >
+                              </div>
+                              <br>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-mobile"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="Phone Number" (focus)="focus=true" (blur)="focus=false" >
+                              </div>
+                              <br>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-pin-3"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="Address" (focus)="focus=true" (blur)="focus=false" >
+                              </div>
+                              <br>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-circle-10"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="Profile Picture" (focus)="focus=true" (blur)="focus=false" >
+                                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              </div>
+                              <button class="btn btn-danger btn-block btn-round">Register</button>
+                          </form>
+                          <div class="forgot">
+                              <a [routerLink]="['/login']" class="btn btn-link btn-danger" style="text-decoration: underline;">Already have an account? login</a><br>
+  
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2"  style="color: black;">
+                                    <a [routerLink]="['/login']"  >I agree tot the terms and conditions</a>
+                                                                </label>
+                              </div>
+                              
+                          </div>
+                          
+                      </div>
+                    </div>
+                </div>
+                <div class="footer register-footer text-center">
+                </div>
+            </div>
+    </div>
+</div>

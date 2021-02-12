@@ -13,6 +13,14 @@ import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { DispatchComponent } from './dispatch/dispatch.component';
+import { SearchComponent } from './search/search.component';
+import { ProfilComponent } from './profil/profil.component';
+import { MyprofilComponent } from './myprofil/myprofil.component';
+import { ReserveComponent } from './reserve/reserve.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -21,7 +29,15 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent,
+    AcceuilComponent,
+    DispatchComponent,
+    SearchComponent,
+    ProfilComponent,
+    MyprofilComponent,
+    ReserveComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
