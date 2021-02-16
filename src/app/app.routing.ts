@@ -20,21 +20,21 @@ import { ReserveComponent } from './reserve/reserve.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },//dyalna
     { path: 'component',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'login',          component: LoginComponent },
-    { path: 'home',          component: HomeComponent },
-    { path: 'register',          component: RegisterComponent },
-    { path: 'acceuil',          component: AcceuilComponent },
-    { path: 'dispatch',          component: DispatchComponent },
-    { path: 'search',          component: SearchComponent },
-    { path: 'profil',     component: ProfilComponent },
-    { path: 'myprofil',          component: MyprofilComponent },
-    { path: 'reserve',     component: ReserveComponent },
-    { path: 'about',     component: AboutusComponent },
+    { path: 'login',          component: LoginComponent },//dyalna
+    { path: 'home',          component: HomeComponent },//dyalna
+    { path: 'register',          component: RegisterComponent },//dyalna
+    { path: 'acceuil',          component: AcceuilComponent },//dyalna
+    { path: 'dispatch',          component: DispatchComponent },//dyalna
+    { path: 'search',          component: SearchComponent },//dyalna
+    { path: 'profil',     component: ProfilComponent },//dyalna
+    { path: 'myprofil',          component: MyprofilComponent },//dyalna
+    { path: 'reserve',     component: ReserveComponent },//dyalna
+    { path: 'about',     component: AboutusComponent },//dyalna
     { path: 'nucleoicons',      component: NucleoiconsComponent }
 ];
 

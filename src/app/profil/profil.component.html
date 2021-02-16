@@ -28,7 +28,7 @@
             <div class="nav-tabs-navigation">
                 <div class="nav-tabs-wrapper">
                     <ngb-tabset [justify]="'center'">
-                        <ngb-tab title="Dispatched">
+                        <ngb-tab title="Dispatched offers">
                             <ng-template ngbTabContent >
                                 <div class="row following" id="follows">
                                     <div class="col-md-6 ml-auto mr-auto">
@@ -36,7 +36,7 @@
                                             <li>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" [routerLink]="['/profil']" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-4 ml-auto">
                                                         <h6>Amine Ettazi<br /><small>12-05-2020</small><br><small>My experience was really good, .....</small></h6>
@@ -51,7 +51,7 @@
                                             <li>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" [routerLink]="['/profil']" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-4 ml-auto">
                                                         <h6>Anas Kamal<br /><small>23-08-2020</small><br><small>My experience was really good, .....</small></h6>
@@ -67,9 +67,9 @@
                                 </div>
                             </ng-template>
                         </ngb-tab>
-                        <ngb-tab title="Sent">
+                        <ngb-tab title="Dispatched requests">
                             <ng-template ngbTabContent>
-                                <h3 class="text-muted">Haven't sent anything yet :(</h3>
+                                <h3 class="text-muted">Doesn't have any dispatched requests yet :(</h3>
                                 <br>
                                 
                             </ng-template>

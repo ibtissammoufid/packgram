@@ -28,7 +28,7 @@
             <div class="nav-tabs-navigation">
                 <div class="nav-tabs-wrapper">
                     <ngb-tabset [justify]="'center'">
-                        <ngb-tab title="Dispatched">
+                        <ngb-tab title="Dispatched offers">
                             <ng-template ngbTabContent >
                                 <div class="row following" id="follows">
                                     <div class="col-md-6 ml-auto mr-auto">
@@ -36,7 +36,7 @@
                                             <li>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" [routerLink]="['/profil']" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-4 ml-auto">
                                                         <h6>Amine Ettazi<br /><small>12-05-2020</small><br><small>My experience was really good, .....</small></h6>
@@ -50,7 +50,7 @@
                                             <li>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" [routerLink]="['/profil']" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-4 ml-auto">
                                                         <h6>Anas Kamal<br /><small>23-08-2020</small><br><small>My experience was really good, .....</small></h6>
@@ -67,7 +67,7 @@
                                 </div>
                             </ng-template>
                         </ngb-tab>
-                        <ngb-tab title="Sent">
+                        <ngb-tab title="Dispatched requests">
                             <ng-template ngbTabContent>
                                 <h3 class="text-muted">Haven't sent anything yet :(</h3>
                                 <br>
@@ -94,7 +94,7 @@
                             </ng-template>
                         </ngb-tab>
 
-                        <ngb-tab title="Pending requests to send">
+                        <ngb-tab title="My requests">
                             <ng-template ngbTabContent >
                                 <div class="row following" id="follows">
                                     <div class="col-md-6 ml-auto mr-auto">
@@ -103,21 +103,23 @@
                                             <li>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" [routerLink]="['/profil']" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-4 ml-auto">
                                                         <h6>Anas Kamal<br /><small>23-08-2020</small><br><small>Anas Kamal approved your request. Contact them to continue the procedure. When finished, don't forget to review your experience.</small></h6>
                                                     </div>
                                                     <div class="col-md-3 col-sm-2 ml-auto mr-auto">
-                                                        <button class="btn btn-outline-default btn-round">Cancel</button><br><br>
-                                                        <button class="btn btn-outline-default btn-round">  Review</button>
+                                                        
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="form-group">
                                                             <input type="text" class="form-control" placeholder="Write your Review">
+                                                            
                                                         </div>
+                                                        <button class="btn btn-outline-default btn-round">  Review</button>
                                                     </div>
                                                     
                                                 </div>
@@ -127,7 +129,7 @@
                                 </div>
                             </ng-template>
                         </ngb-tab>
-                        <ngb-tab title="Pending requests to dispatch">
+                        <ngb-tab title="My offers">
                             <ng-template ngbTabContent >
                                 <div class="row following" id="follows">
                                     <div class="col-md-6 ml-auto mr-auto">
@@ -135,7 +137,7 @@
                                             <li>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" [routerLink]="['/profil']" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                                     </div>
                                                     <div class="col-md-7 col-sm-4 ml-auto">
                                                         <h6>Amine Ettazi<br /><small>12-05-2020</small><br><small>Details from Amine Ettazi</small></h6>
