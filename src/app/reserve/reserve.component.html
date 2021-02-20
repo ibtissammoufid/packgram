@@ -29,7 +29,24 @@
                           
                         </div>
                         <div class="col">
-                            <button type="button" slot="end" class="btn btn-outline-danger">Send</button>
+                            <ng-template #content let-c="close" let-d="dismiss">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="modal-basic-title">Alert!</h4>
+                                  <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Are you sure you want to book this offer?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-warning" (click)="d('Cross click')" >Cancel</button>
+                                  <button type="button" class="btn btn-outline-danger" (click)="c('Save click')">Yes</button>&nbsp;&nbsp;
+                                </div>
+                              </ng-template>
+                              
+                              <button class="btn btn-outline-danger" (click)="open(content)">Book</button>
+                            
                         </div>
                       </div>
 
