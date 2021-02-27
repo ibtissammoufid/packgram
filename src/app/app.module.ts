@@ -22,6 +22,8 @@ import { MyprofilComponent } from './myprofil/myprofil.component';
 import { ReserveComponent } from './reserve/reserve.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     NgbModule,
     FormsModule,
     RouterModule,
+    HttpClientModule,
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,

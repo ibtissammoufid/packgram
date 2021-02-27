@@ -8,44 +8,51 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title">Enter your flight informations and wait for our notification .</h2>
-                    
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Destination">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Vacant space (in Kg)">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Price">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Details">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Time (exp : 23:00)">
-                    </div>
-
-                    <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
-                        <input class="form-control" placeholder="date"
-                             name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
-                        <div class="input-group-append">
-                            <span class="glyphicon glyphicon-calendar input-group-text">
-                              <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </span>
+                    <form (ngSubmit) = "onSubmit()">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Destination"
+                            id = "destination" [(ngModel)] = "offre.destination" name = "destination">
                         </div>
-                    </div>
-                    <br><br>
-                    <div class="row">
-                        <div class="col">
-                          
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Vacant space (in Kg)"
+                            id = "space" [(ngModel)] = "offre.space" name = "space">
                         </div>
-                        <div class="col-5">
-                          
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Price"
+                            id = "price" [(ngModel)] = "offre.price" name = "price">
                         </div>
-                        <div class="col">
-                            <button type="button" slot="end" class="btn btn-outline-danger">Save</button>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Details"
+                            id = "details" [(ngModel)] = "offre.details" name = "details">
                         </div>
-                      </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Time (exp : 23:00)"
+                            id = "time" [(ngModel)] = "offre.time" name = "time">
+                        </div>
+    
+                        <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
+                            <input class="form-control" placeholder="date"  id = "date" [(ngModel)] = "offre.date" name = "date"
+                                 name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
+                            <div class="input-group-append">
+                                <span class="glyphicon glyphicon-calendar input-group-text">
+                                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col">
+                              
+                            </div>
+                            <div class="col-5">
+                              
+                            </div>
+                            <div class="col">
+                                <button type="submit" slot="end" class="btn btn-outline-danger">Save</button>
+                            </div>
+                          </div>
+                    </form>
+                   
 
                     
                     </div>

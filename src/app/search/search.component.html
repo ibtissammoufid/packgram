@@ -36,11 +36,11 @@
    
             </div>
             <div class="row">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" *ngFor = "let offre of offres">
                     <div class="card-body">
-                      <h5 class="card-title">18:00</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">5 kg</h6>
-                      <p class="card-text">Details about this offer</p>
+                      <h5 class="card-title"> {{ offre.time }}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{{ offre.space }}</h6>
+                      <p class="card-text">{{ offre.details }}</p>
                       <a [routerLink]="['/reserve']" class="card-link">Reserve</a>
                       <a [routerLink]="['/profil']" class="card-link">View Profile</a>
                     </div>
